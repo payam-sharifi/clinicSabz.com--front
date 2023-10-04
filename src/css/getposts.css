@@ -1,0 +1,74 @@
+.cover-img {
+    width: 100%;
+    height: 30vw;
+    object-fit: contain;
+
+}
+.vasat{
+    margin-top: 15rem;
+}
+.card-post{
+    height: 20rem;
+    width: 30rem;
+
+}
+
+.fs-smallest{
+    font-size: small;
+   
+}
+.landscape-img-post{
+    max-height: 20rem;
+    max-width: 15rem;
+}
+.set-text{
+    text-align: right;
+    text-align: justify;
+}
+.mt-10{
+    margin-top: 8rem;
+}
+.hide-text{
+line-height: 1.2em;
+    height: 12em;       
+    overflow: hidden;
+}
+.mt-azbanner-10{
+    margin-top: 8rem;
+}
+.showimg{
+    max-height: 20rem;
+    max-width: 40rem;
+}
+@media only screen and (max-width: 600px) {
+    .photo-bandangoshti{
+        max-width: 4rem;
+        max-height: 6rem;
+    }
+    .d-n{
+        display: none;
+    }
+
+    .showimg{
+        max-height: 20rem;
+        max-width: 18rem;
+
+    }
+.mt-10{
+    margin-top: 1rem;
+}
+.mt-azbanner-10{
+    margin-top: 5rem;
+}
+.landscape-img-post{
+    max-height: 20rem;
+    max-width: 13rem;
+}
+
+    
+}
+
+.photo-bandangoshti{
+    max-width: 4rem;
+    max-height: 6rem;
+}

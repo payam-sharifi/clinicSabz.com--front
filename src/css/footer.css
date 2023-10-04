@@ -1,0 +1,29 @@
+
+#footer{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+    bottom:0;
+    width:100%;
+    margin-top: auto;
+   
+}
+
+
+#footer a{
+    color: black;
+       }
+   
+       #footer-d{
+           font-size:xx-small;
+           padding: 0;
+       }
+   
+   .ad{
+       font-size: smaller;
+   }
+   .bg-menu{
+    background-color:#ACD1AF;
+  
+    
+}

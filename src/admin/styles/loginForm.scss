@@ -1,0 +1,24 @@
+@import "./colors";
+.form-signinn {
+    width: 100%;
+    max-width: 20rem;
+    padding: 15px;
+    margin: 15rem auto;
+
+}
+
+/* login form 2 styles */
+.box-form{
+
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid green;
+    background-color: $box-color;
+  }
+  body{
+    background-color:$bg-global-color;
+  }
+
+  .p-c{
+    cursor: pointer;
+  }

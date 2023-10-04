@@ -1,0 +1,50 @@
+
+
+
+.mainbox{
+   margin-top: 10rem;
+   
+}
+.box{
+    height: 12rem;
+    width: 12rem; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:black ;   
+    transition: transform 1s;
+}
+.addposts{
+    background-image: url("../../public/images/sendposts.jpeg"); 
+    background-color: #cccccc; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+   
+
+}
+.box:hover{
+    transform: scale(1.2);
+}
+
+.text-back{
+  
+    border-radius: 1rem;
+  
+  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+

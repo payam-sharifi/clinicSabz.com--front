@@ -1,0 +1,83 @@
+.box-center {
+  top:1%;
+  position:absolute;
+  left: 22%;
+  padding: 15px;
+  margin: 5rem auto;
+}
+.control-form{
+  background-color: rgba(135, 199, 150, 0.672);
+ 
+  
+border-radius: 1rem;
+  height:auto;
+}
+
+.responsive-calendar {
+  /* by setting font-size, all the elements will correspond */
+  font-size: 9px !important; /* default to 10px */
+}
+
+@media (max-width: 1500px) {
+  .responsive-calendar {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .responsive-calendar {
+    font-size: 7px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-calendar {
+    margin-top: 10px;
+    font-size: 8px !important;
+    width: auto !important;
+    height: 10rem !important;
+  }
+  .box-center {
+
+margin-top: 3rem ;
+    left: 0 !important;
+    padding: 1rem;
+  
+   
+  }
+ 
+  .control-form{
+    background-color: rgba(135, 199, 150, 0.672);
+   width: auto;
+    padding: 5px;
+  border-radius: 1rem;
+    height:auto;
+  }
+  .custom-calendar {
+   width: auto;
+    height: auto;
+    }
+}
+
+/* Large screens */
+@media (min-width: 2500px) {
+  .responsive-calendar {
+    font-size: 12px !important;
+  }
+}
+.custom-calendar {
+width: 45rem;
+height: 20rem;
+}
+
+.custom-today-day {
+  color: #e67e22 !important;
+  border: 1px solid #e67e22 !important;
+}
+
+.custom-today-day::after {
+  visibility: hidden; /* hide small border under the text */
+}
+.purpleDay:not(.-selectedStart):not(.-selectedBetween):not(.-selectedEnd):not(.-selected) {
+  border: 2px solid rgba(156, 136, 255, 0.7) !important;
+}
