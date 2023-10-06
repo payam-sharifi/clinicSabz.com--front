@@ -1,14 +1,17 @@
 .item {
     align-items: center;
-    color: #FFF;
+    color: black;
     cursor: pointer;
     display: flex;
     font-size: 14px;
     height: 20px;
     justify-content: center;
     width: 20px;
+    
   }
-  
+  .previous a{
+   color: black;
+  }
   .disabled-page {
     color: #808e9b;
   }
@@ -19,20 +22,12 @@
     color: #808e9b;
   }
   
-  .m-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20;
-    box-sizing: border-box;
-    margin-right: 10%;
-    width:50%;
-    height:50%; 
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
+  .next a{
+    color: black;
+  }
   
   .next {
+  
       text-decoration: none;
     border-left: solid 1px #808e9b;
     font-size: 18px;
@@ -46,7 +41,7 @@
   
   .pagination {
     align-items: center;
-    background-color:  #A3C1A6;
+    background-color:  white;
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -54,6 +49,8 @@
     list-style-type: none;
     position: relative;
     width: 1000px;
+    border-radius: 5px;
+    margin-top: 40px;
   }
   
   .pagination-page {

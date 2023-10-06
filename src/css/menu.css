@@ -2,7 +2,7 @@
     color: black;
 }
 .navbar a:hover{
-    color: white;
+   
     background-color: #A3C1A6;
     border-radius: 20%;
    
@@ -24,7 +24,7 @@
     color: black;
 }
 .navbar a:hover{
-    color: white;
+ 
     background-color: #A3C1A6;
     border-radius: 20%;
    
@@ -63,8 +63,7 @@
     .trans{
         transition: all 1s;
         padding: 0.5rem;
+        left: -20px;
     }
-    .nav-trans{
-        transition: 1s;
-    }
+   
 }

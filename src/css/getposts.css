@@ -1,74 +1,92 @@
-.cover-img {
+.box-article{
+    border-radius: 5px 5px 50px 5px;
+    position: relative;
+    overflow: visible;
+    height: 483px;
+    width: 373px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25px 5px 15px 25px;
+    -webkit-box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.box-article::before{
+    content: '';
     width: 100%;
-    height: 30vw;
-    object-fit: contain;
-
+    height: 100%;
+    border-radius: 5px 5px 50px 5px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    transition: 500ms;
+    z-index: -1;
 }
-.vasat{
-    margin-top: 15rem;
+.box-news-tlt {
+    
+    color:#1f1f1f;
+    font-size: 16px;
+    display: block;
+    line-height: 27px;
+    margin-top: 15px;
+    font-weight: bold;
 }
-.card-post{
-    height: 20rem;
-    width: 30rem;
-
+.box-news-title {
+    display: block;
+    min-height: 130px;
+    text-align: right !important;
 }
-
-.fs-smallest{
-    font-size: small;
-   
-}
-.landscape-img-post{
-    max-height: 20rem;
-    max-width: 15rem;
-}
-.set-text{
-    text-align: right;
-    text-align: justify;
-}
-.mt-10{
-    margin-top: 8rem;
-}
-.hide-text{
-line-height: 1.2em;
-    height: 12em;       
+.news-images{
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
-.mt-azbanner-10{
-    margin-top: 8rem;
+.article-title{
+    color: black !important;
 }
-.showimg{
-    max-height: 20rem;
-    max-width: 40rem;
+.news-image img {
+    width: 100%;
+    height: 100%!important;
+    object-fit: cover;
+    float: none;
 }
-@media only screen and (max-width: 600px) {
-    .photo-bandangoshti{
-        max-width: 4rem;
-        max-height: 6rem;
-    }
-    .d-n{
-        display: none;
-    }
-
-    .showimg{
-        max-height: 20rem;
-        max-width: 18rem;
-
-    }
-.mt-10{
-    margin-top: 1rem;
-}
-.mt-azbanner-10{
-    margin-top: 5rem;
-}
-.landscape-img-post{
-    max-height: 20rem;
-    max-width: 13rem;
-}
-
+.article-box{
+    text-align: center;
     
 }
+.t-left{
+    text-align: left !important;
+}
+.box-article:hover{
+   
+    margin-right: 1px;
+    transition: all 0.5s;
 
-.photo-bandangoshti{
-    max-width: 4rem;
-    max-height: 6rem;
+} 
+.box-article .more-news:hover{
+   background-color: #1f1f1f;
+    margin-top: 3rem;
+    transition: all 1s;
+
+} 
+
+.box-article a.more-news {
+    display: inline-block;
+    color: #fff;
+    min-width: 120px;
+    padding: 0 10px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 5px 5px 30px 5px;
+    background: green;
+    transition: 300ms;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 13px;
 }

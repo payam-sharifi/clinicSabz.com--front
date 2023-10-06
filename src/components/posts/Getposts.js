@@ -3,6 +3,8 @@ import { memo } from "react";
 import { Spinner } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import "../../css/getposts.css";
+import "../../css/pagination.css"
 const BASE_URL = process.env.REACT_APP_API_URL;
 
 const Getposts = () => {
@@ -17,7 +19,7 @@ const Getposts = () => {
   };
   const [loader, setloader] = useState(true);
   useEffect(() => {
-    console.log(`${BASE_URL}/posts`)
+    console.log(`${BASE_URL}/posts`);
     fetch(`${BASE_URL}/posts`)
       .then((res) => res.json())
       .then((data) => {
@@ -25,50 +27,63 @@ const Getposts = () => {
         setloader(false);
       });
   }, []);
-console.log(blogPosts)
+  console.log(blogPosts);
   return (
     <>
       {loader && <Spinner animation="border" variant="danger" />}
       {blogPosts === null ? (
-        <h1>null</h1>
+<h1>null</h1>
       ) : (
-        <div className="container">
-          <div  className="row g-5 justify-content-center justify-items-center text-center">
-            {currentPosts.map((p) => (
-              <div data-aos="fade-in"  data-aos-duration="1000" data-aos-delay="500" className="col-md-4 mb-5" key={p._id}>
-                <div className="d-flex shadow">
-                  <div className="card-post  overflow-auto ">
-                    <div className="p-3  ">
-                      <p className="text-muted fs-smallest  d-none">{p.date}</p>
-                      <div className="text-right">
-                        
-                        <p className="fs-smallest text-justify set-text hide-text">
-                          {p.body}
-                        </p>
-
-                        <div className="fs-smallest text-muted d-flex mt-2  mb-2">
-                          <NavLink
-                            className="cursor-pointer"
-                            to={`/posts/${p._id}`}
-                          >
-                            ادامه ...
-                          </NavLink>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <img
-                    className="landscape-img-post"
-                    src={p.imgurl[0]}
-                    alt="..."
-                  />
+     
+        <div className="row ms-5 justify-content-around align-items-center">
+          
+          {currentPosts.map((p) => (
+            <div className="col-md-4 ">
+              <div className="box-article">
+                <div className="news-image">
+                  <a
+                    href="https://medical.sanandajweb.ir/%d9%84%d9%88%d8%b1%d9%85-%d8%a7%db%8c%d9%be%d8%b3%d9%88%d9%85-%d9%85%d8%aa%d9%86-%d8%b3%d8%a7%d8%ae%d8%aa%da%af%db%8c-%d9%86%d8%a7%d9%85%d9%81%d9%87%d9%88%d9%85-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c-9/"
+                    dideo-checked="true"
+                  >
+                    <img
+                      loading="lazy"
+                      width="300"
+                      src={p.imgurl[0]}
+                      class="attachment-medium size-medium wp-post-image"
+                      alt=""
+                      decoding="async"
+                      sizes="(max-width: 300px) 100vw, 300px"
+                    />{" "}
+                  </a>
                 </div>
+                <div class="box-news-title ">
+                  <a
+                    className="text-decoration-none "
+                    href="https://medical.sanandajweb.ir/%d9%84%d9%88%d8%b1%d9%85-%d8%a7%db%8c%d9%be%d8%b3%d9%88%d9%85-%d9%85%d8%aa%d9%86-%d8%b3%d8%a7%d8%ae%d8%aa%da%af%db%8c-%d9%86%d8%a7%d9%85%d9%81%d9%87%d9%88%d9%85-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c-9/"
+                    dideo-checked="true"
+                  >
+                    <h3 class="box-news-tlt">{p.body}</h3>
+                  </a>
+                  <div class="d-flex align-items-center mt-3 justify-content-start">
+                    <span class="dir-rtl">
+                      <i class="text-primary mx-3 bi bi-clock"></i>
+                      {p.date}
+                    </span>
+                    {/*    <span class="mr-3 dir-rtl">
+                  <i class="icon-eye "></i>13{" "}
+                </span> */}
+                  </div>
+                </div>
+                <div class="t-left mt-auto">
+                        <a href="https://medical.sanandajweb.ir/%d9%84%d9%88%d8%b1%d9%85-%d8%a7%db%8c%d9%be%d8%b3%d9%88%d9%85-%d9%85%d8%aa%d9%86-%d8%b3%d8%a7%d8%ae%d8%aa%da%af%db%8c-%d9%86%d8%a7%d9%85%d9%81%d9%87%d9%88%d9%85-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c-9/" class="more-news dir-rtl" dideo-checked="true">ادامه مطلب                                                        <i class="icon-arrow-left"></i>
+                        <i  class="bi bi-arrow-left"></i>
+                                                    </a>
+                    </div>
               </div>
-            ))}
-          </div>
-          <div className="m-left" style={{marginBottom:10+"rem"}}>
-            <ReactPaginate
+            </div>
+          ))}
+        
+          <ReactPaginate
               onPageChange={paginate}
               pageCount={Math.ceil(blogPosts.length / postsPerPage)}
               previousLabel={"<<"}
@@ -76,7 +91,7 @@ console.log(blogPosts)
               activeClassName={"item active "}
               breakClassName={"item break-me "}
               breakLabel={"..."}
-              containerClassName={"pagination"}
+              containerClassName={"pagination "}
               disabledClassName={"disabled-page"}
               marginPagesDisplayed={2}
               nextClassName={"item previous "}
@@ -84,8 +99,9 @@ console.log(blogPosts)
               pageRangeDisplayed={2}
               previousClassName={"item next"}
             />
+         
           </div>
-        </div>
+         
       )}
     </>
   );

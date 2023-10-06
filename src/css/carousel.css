@@ -1,13 +1,13 @@
 
 /* carousel section  */
 .carousel{
-  
+  left: -20px;
     overflow: hidden;
 }
   .carousel img{
     
       width: 100vw;
-      height: 90vh;
+      height: 70vh;
    overflow: hidden;
    margin: 0 0;
     
