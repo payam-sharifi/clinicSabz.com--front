@@ -37,6 +37,20 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   text-align: right;
 }
+ .about-box-title {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  line-height: normal;
+  display: block;
+}
+.about-box-text {
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: normal;
+  margin: 0;
+  display: block;
+}
 .about-box1 {
     background-color: #cbe1cd;
     border-radius: 25px 25px 25px 25px;
@@ -58,3 +72,67 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     text-align: right;
   }
+  @media screen and  (max-width: 780px) {
+    .about {
+      width: 100%;
+     text-align: center;
+ 
+    }
+    .about1 {
+      width: 100%;
+     text-align: center;
+ 
+    }
+    .about-image {
+      width: 100%;
+    
+      border-radius: 20px;
+      box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.1);
+      height: 30%;
+    }
+    .about-box {
+      background-color: #cbe1cd;
+      border-radius: 25px 25px 25px 25px;
+      position: absolute;
+      right: 0px;
+      border-radius: 20px;
+      width: 100%;
+     
+    
+      top: 260px;
+      bottom: 50px;
+      height: fit-content;
+      margin: auto;
+      z-index: 1;
+      
+      padding: 25px 20px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      text-align: right;
+    }
+    .about-box1 {
+      background-color: #cbe1cd;
+      border-radius: 25px 25px 25px 25px;
+      position: absolute;
+      right: 0px;
+      border-radius: 20px;
+      width: 100%;
+     
+    
+      top: 260px;
+      bottom: 50px;
+      height: fit-content;
+      margin: auto;
+      z-index: 1;
+      
+      padding: 25px 20px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      text-align: right;
+    }
+ 
+        }

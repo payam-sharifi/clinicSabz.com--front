@@ -1,0 +1,44 @@
+.onlinecart1{
+    width: 270px;
+    height: 600px;
+    background-color: white;
+   margin-right: 30%;
+   margin-top: 10%;
+    border-radius: 15px;
+}
+.onlinecart{
+    width: 270px;
+    height: 380px;
+    background-color: white;
+   margin-right: 30%;
+   margin-top: 10%;
+    border-radius: 15px;
+}
+
+.onlinecart img{
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+    
+}
+.pagin{
+    margin-right: 300px;
+}
+.onlinecart .title{
+    margin-top:10px;
+    font-weight: bold;
+    
+}
+.onlinecart .price{
+  color: green;  
+  margin-bottom: 10px;
+}
+
+@media screen and  (max-width: 780px) {
+  
+ .shop{
+    margin-right: 0px !important;
+    margin-left: 100px !important;
+    margin-bottom: 40px !important;
+ }
+}

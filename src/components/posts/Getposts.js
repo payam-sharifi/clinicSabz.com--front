@@ -30,12 +30,14 @@ const Getposts = () => {
   console.log(blogPosts);
   return (
     <>
+    <div className="text-center"> 
       {loader && <Spinner animation="border" variant="danger" />}
+      </div>
       {blogPosts === null ? (
 <h1>null</h1>
       ) : (
-     
-        <div className="row ms-5 justify-content-around align-items-center">
+     <div className="container">
+        <div className="row ms-md-5 justify-content-center justify-content-md-center align-items-center">
           
           {currentPosts.map((p) => (
             <div className="col-md-4 ">
@@ -74,7 +76,7 @@ const Getposts = () => {
                 </span> */}
                   </div>
                 </div>
-                <div class="t-left mt-auto">
+                <div class="t-left ">
                         <a href="https://medical.sanandajweb.ir/%d9%84%d9%88%d8%b1%d9%85-%d8%a7%db%8c%d9%be%d8%b3%d9%88%d9%85-%d9%85%d8%aa%d9%86-%d8%b3%d8%a7%d8%ae%d8%aa%da%af%db%8c-%d9%86%d8%a7%d9%85%d9%81%d9%87%d9%88%d9%85-%d9%85%d8%b9%d9%85%d8%a7%d8%b1%db%8c-9/" class="more-news dir-rtl" dideo-checked="true">ادامه مطلب                                                        <i class="icon-arrow-left"></i>
                         <i  class="bi bi-arrow-left"></i>
                                                     </a>
@@ -91,7 +93,7 @@ const Getposts = () => {
               activeClassName={"item active "}
               breakClassName={"item break-me "}
               breakLabel={"..."}
-              containerClassName={"pagination "}
+              containerClassName={"pagination"}
               disabledClassName={"disabled-page"}
               marginPagesDisplayed={2}
               nextClassName={"item previous "}
@@ -101,7 +103,7 @@ const Getposts = () => {
             />
          
           </div>
-         
+          </div>   
       )}
     </>
   );

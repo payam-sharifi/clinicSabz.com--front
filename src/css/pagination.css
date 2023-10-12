@@ -69,14 +69,16 @@
     /* For mobile phones: */
     .pagination {
       align-items: center;
-      background-color:  #A3C1A6;
+      background-color:  white;
       display: flex;
       flex-direction: row;
       height: 2rem;
       justify-content: center;
       list-style-type: none;
       position: relative;
-      width: 17rem;
+      width: 70%;
+      margin-top: 10px;
+      margin-left: 45px;
     }
     .previous {
       border-right: solid 1px #808e9b;

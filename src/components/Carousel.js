@@ -1,5 +1,5 @@
 import { memo } from "react";
-
+import OnlineShop from "./OnlineShop";
 
 const Carousel=()=>{
 
@@ -10,6 +10,7 @@ const Carousel=()=>{
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
       
         <div className="carousel-inner">
+          
            <div className="carousel-item active" >
             <img src="images/1.jpeg" className="d-block w-100" alt="..."/>
           {/* <div className="carousel-caption d-none d-md-block">

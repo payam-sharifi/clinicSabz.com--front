@@ -11,6 +11,8 @@ import "../css/home.css";
 import "../css/getposts.css";
 import { NavLink } from "react-router-dom";
 import { Row } from "react-bootstrap";
+import OnlineShop from "../components/OnlineShop";
+import ProductSlider from "../components/ProductSlider";
 const BASE_URL = "https://nodejs-clinic.chbk.run";
 const Home = () => {
   const [size, setsize] = useState(18);
@@ -26,154 +28,161 @@ const Home = () => {
 
   return (
     <>
-      <div className=" d-flex flex-column">
+      <div className="overflow-hidden d-flex flex-column justify-content-center ">
         <Menu />
 
         <Carousel />
         <Between />
 
-        <div className="clinics">
+        <div className="clinics ">
           <div className="parallax">
             <hr className="dropdown-divider " />
 
-            <div className="text-center mt-2  departments overflow-hidden">
+              
+
+            <div className="text-center me-5 me-md-0  departments overflow-hidden">
               <h1>دپارتمان ها</h1>
             </div>
 
-            <div className="dep row mt-md-5  ms-4 text-center justify-content-around align-items-center ">
-              <div className="col-md-3">
-                <div
-                  data-aos="fade-in"
-                  data-aos-duration="1000"
-                  data-aos-delay="1000"
-                  className="col-md-3 mt-3 "
-                >
-                  <NavLink className="nav-link " to="/reservation">
-                    <div
-                      className="card shadow-lg  clinic100 "
-                      style={{ width: size + "rem" }}
-                    >
-                      <img
-                        src="images/back_bone.jpeg"
-                        style={{ height: 300 + "px" }}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="content">
-                        <h4 class="nav-box-title">کلینیک ستون فقرات</h4>
-                        <a
-                          href="tel:09035648082"
-                          target="_blank"
-                          class="text-decoration-none btn-brown pl-5 pr-5"
-                          dideo-checked="true"
-                        >
-                          وقت رزرو کنید
-                        </a>
+            <div className="container">
+              <div className="row align-items-center me-4 me-md-0">
+                <div className="col-md-3">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-duration="3500"
+                    data-aos-delay="3500"
+                    className="col-md-3 mt-3 "
+                  >
+                    <NavLink className="nav-link " to="/reservation">
+                      <div
+                        className="card shadow-lg-lg  clinic100 "
+                        style={{ width: size + "rem" }}
+                      >
+                        <img
+                          src="images/fany.jpeg"
+                          style={{ height: 300 + "px" }}
+                          className="card-img-top"
+                          alt="..."
+                        />
+                        <div className="content">
+                          <h4 class="nav-box-title">کلینیک ارتوپد فنی</h4>
+                          <a
+                            href="tel:09035648082"
+                            target="_blank"
+                            class="text-decoration-none btn-brown pl-5 pr-5"
+                            dideo-checked="true"
+                          >
+                            وقت رزرو کنید
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </NavLink>
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-3">
-                <div
-                  data-aos="fade-in"
-                  data-aos-duration="2000"
-                  data-aos-delay="2000"
-                  className="col-md-3 mt-3 "
-                >
-                  <NavLink className="nav-link " to="/reservation">
-                    <div
-                      className="card shadow-lg  clinic100 "
-                      style={{ width: size + "rem" }}
-                    >
-                      <img
-                        src="images/types-of-physical-therapy.jpeg"
-                        style={{ height: 300 + "px" }}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="content">
-                        <h4 class="nav-box-title">کلینیک فیزیوتراپی</h4>
-                        <a
-                          href="tel:09035648082"
-                          target="_blank"
-                          class="text-decoration-none btn-brown pl-5 pr-5"
-                          dideo-checked="true"
-                        >
-                          وقت رزرو کنید
-                        </a>
+                <div className="col-md-3 ">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
+                    className="col-md-3 mt-3 "
+                  >
+                    <NavLink className="nav-link " to="/reservation">
+                      <div
+                        className="card shadow-lg  clinic100 "
+                        style={{ width: size + "rem" }}
+                      >
+                        <img
+                          src="images/back_bone.jpeg"
+                          style={{ height: 300 + "px" }}
+                          className="card-img-top"
+                          alt="..."
+                        />
+                        <div className="content">
+                          <h4 class="nav-box-title">کلینیک ستون فقرات</h4>
+                          <a
+                            href="tel:09035648082"
+                            target="_blank"
+                            class="text-decoration-none btn-brown pl-5 pr-5"
+                            dideo-checked="true"
+                          >
+                            وقت رزرو کنید
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </NavLink>
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-3">
-                <div
-                  data-aos="fade-in"
-                  data-aos-duration="3000"
-                  data-aos-delay="3000"
-                  className="col-md-3 mt-3 "
-                >
-                  <NavLink className="nav-link " to="/reservation">
-                    <div
-                      className="card shadow-lg  clinic100 "
-                      style={{ width: size + "rem" }}
-                    >
-                      <img
-                        src="images/ortopedy.jpeg"
-                        style={{ height: 300 + "px" }}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="content">
-                        <h4 class="nav-box-title">کلینیک ارتوپدی</h4>
-                        <a
-                          href="tel:09035648082"
-                          target="_blank"
-                          class="text-decoration-none btn-brown pl-5 pr-5"
-                          dideo-checked="true"
-                        >
-                          وقت رزرو کنید
-                        </a>
+                <div className="col-md-3">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-duration="2000"
+                    data-aos-delay="2000"
+                    className="col-md-3 mt-3 "
+                  >
+                    <NavLink className="nav-link " to="/reservation">
+                      <div
+                        className="card shadow-lg  clinic100 "
+                        style={{ width: size + "rem" }}
+                      >
+                        <img
+                          src="images/types-of-physical-therapy.jpeg"
+                          style={{ height: 300 + "px" }}
+                          className="card-img-top"
+                          alt="..."
+                        />
+                        <div className="content">
+                          <h4 class="nav-box-title">کلینیک فیزیوتراپی</h4>
+                          <a
+                            href="tel:09035648082"
+                            target="_blank"
+                            class="text-decoration-none btn-brown pl-5 pr-5"
+                            dideo-checked="true"
+                          >
+                            وقت رزرو کنید
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </NavLink>
+                    </NavLink>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-3">
-                <div
-                  data-aos="fade-in"
-                  data-aos-duration="3500"
-                  data-aos-delay="3500"
-                  className="col-md-3 mt-3 "
-                >
-                  <NavLink className="nav-link " to="/reservation">
-                    <div
-                      className="card shadow-lg-lg  clinic100 "
-                      style={{ width: size + "rem" }}
-                    >
-                      <img
-                        src="images/fany.jpeg"
-                        style={{ height: 300 + "px" }}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="content">
-                        <h4 class="nav-box-title">کلینیک ارتوپد فنی</h4>
-                        <a
-                          href="tel:09035648082"
-                          target="_blank"
-                          class="text-decoration-none btn-brown pl-5 pr-5"
-                          dideo-checked="true"
-                        >
-                          وقت رزرو کنید
-                        </a>
+                <div className="col-md-3">
+                  <div
+                    data-aos="fade-in"
+                    data-aos-duration="3000"
+                    data-aos-delay="3000"
+                    className="col-md-3 mt-3 "
+                  >
+                    <NavLink className="nav-link " to="/reservation">
+                      <div
+                        className="card shadow-lg  clinic100 "
+                        style={{ width: size + "rem" }}
+                      >
+                        <img
+                          src="images/ortopedy.jpeg"
+                          style={{ height: 300 + "px" }}
+                          className="card-img-top"
+                          alt="..."
+                        />
+                        <div className="content">
+                          <h4 class="nav-box-title">کلینیک ارتوپدی</h4>
+                          <a
+                            href="tel:09035648082"
+                            target="_blank"
+                            class="text-decoration-none btn-brown pl-5 pr-5"
+                            dideo-checked="true"
+                          >
+                            وقت رزرو کنید
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </NavLink>
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             </div>
+
+
+
             <div
               class="elementor-shape elementor-shape-bottom"
               data-negative="false"
@@ -187,34 +196,43 @@ const Home = () => {
                   class="elementor-shape-fill"
                   d="M194,99c186.7,0.7,305-78.3,306-97.2c1,18.9,119.3,97.9,306,97.2c114.3-0.3,194,0.3,194,0.3s0-91.7,0-100c0,0,0,0,0-0 L0,0v99.3C0,99.3,79.7,98.7,194,99z"
                 ></path>
-              </svg>{" "}
+              </svg>
             </div>
           </div>
         </div>
 
-        <div className="services container">
-          <div className="text-center mt-2  departments overflow-hidden">
+        <div className="services container mb-5">
+          <div className="text-center   departments overflow-hidden">
             <h1 style={{ color: "black" }}>خدمات ما</h1>
           </div>
 
           <Cart />
-          <div style={{ height: 30, width: 100 + "%" }}></div>
+          <div className="divider"></div>
           <CartReverse />
-          <div style={{ height: 30, width: 100 + "%" }}></div>
+          <div className="divider"></div>
           <Cart />
         </div>
-
-       <div className="parallax1  p-5">
-        <div className="text-center mb-5 overflow-hidden">
-              <h1 className="article-title"> آخرین مقالات </h1>
+        <div className="onlineshopmain">
+          <div className="row  justify-content-center align-items-center mt-5">
+            <div className=" col-12    me-md-5   text-center departments overflow-hidden">
+              <h1 className="article-title me-3 me-md-0   mt-md-0">
+                خرید آنلاین محصولات
+              </h1>
             </div>
-
-          
-
-        
-      
-        <Getposts /> 
+            <div className="col-12 shop">
+            <ProductSlider />
+            </div>
+          </div>
         </div>
+     
+        <div className="parallax1  p-md-5">
+          <div className="text-center  mb-5  me-md-5  departments overflow-hidden">
+            <h1 className="article-title  me-5 mt-5 mt-md-0"> آخرین مقالات </h1>
+          </div>
+
+          <Getposts />
+        </div>
+
         <Footer />
       </div>
     </>

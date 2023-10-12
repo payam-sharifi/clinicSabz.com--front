@@ -1,69 +1,80 @@
-.navbar a{
-    color: black;
+.navbar a {
+  color: black;
 }
-.navbar a:hover{
-   
-    background-color: #A3C1A6;
-    border-radius: 20%;
-   
-
+.navbar a:hover {
+  background-color: #a3c1a6;
+  border-radius: 20%;
 }
 
-.bg-menu{
-    background-color:#ACD1AF;
-  
-    
+.cursor-pointer {
+  cursor: pointer;
 }
-.cursor-pointer{
-    cursor: pointer;
+
+.navbar a {
+  color: black;
+}
+.navbar a:hover {
+  background-color: #a3c1a6;
+  border-radius: 20%;
+}
+
+.bg-menu {
+  background-color: #acd1af;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+  .header-sm-scroll {
+    background-color: #bddabf;
+    box-shadow: 0px 2px 20px #677d69;
   }
-
-
-
-.navbar a{
-    color: black;
-}
-.navbar a:hover{
- 
-    background-color: #A3C1A6;
-    border-radius: 20%;
-   
-
-}
-
-
-.bg-menu{
-    background-color:#ACD1AF;
-  
-    
-}
-.cursor-pointer{
-    cursor: pointer;
+  .trans {
+    transition: all 1s;
+    padding: 0.5rem;
   }
+}
 
-  @media only screen and (max-width: 600px) {
-    .header-sm-scroll{
-        background-color: #BDDABF;
-        box-shadow: 0px 2px 20px #677D69;
-       
-    }
-  }
+.activeMenuItem {
+  background-color: #88b38bbe;
+  padding: 5px;
+  border-radius: 5px;
+}
 
+.sidecover {
+  position: fixed;
+  width: 500px;
+  right: 100px;
+  height: 100vh;
+  background-color: #0607068f;
+
+  z-index: 998;
+}
+.sidebarclinic {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: #a3c1a6;
+  transition: all 3s ease-in-out;
+  padding: 2rem;
+  z-index: 999;
+}
 
 @media only screen and (min-width: 768px) {
+  .header-scroll {
+    background-color: #cbe1cd;
 
-.header-scroll{
-    background-color: #BDDABF;
-    box-shadow: 0px 2px 20px #677D69;
+    box-shadow: 0px 2px 20px #677d69;
     opacity: 90%;
-}
-    .nav-trans{
-        transition: 1s;
-    }
-    .trans{
-        transition: all 1s;
-        padding: 0.5rem;
-        left: -20px;
-    }
-   
+  }
+  .nav-trans {
+    transition: 1s;
+    font-weight: bold;
+  }
+  .trans {
+    transition: all 1s;
+    padding: 0.5rem;
+    margin-left: -40px;
+  }
 }

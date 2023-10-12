@@ -1,13 +1,13 @@
 
 /* carousel section  */
 .carousel{
-  left: -20px;
+  margin-left: -40px;
     overflow: hidden;
 }
   .carousel img{
     
       width: 100vw;
-      height: 70vh;
+      height: 100vh;
    overflow: hidden;
    margin: 0 0;
     
@@ -17,7 +17,7 @@
     .carousel img{
 
         width: 100% !important;
-        height: 50vh;
+        height: 100vh;
       
   }
   .clinic100{
@@ -38,9 +38,9 @@
       bottom: 0;
       left: 0;
     }
-    @media screen and  (max-width: 600px) {
+    @media screen and  (max-width: 780px) {
 
 .mt-mobile-5{
-  margin-top: 3.5rem;
+  margin-left: -8px;
 }
     }

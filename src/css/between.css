@@ -1,34 +1,43 @@
-.betcontainer{
-    
-    height:70px;
-    background-color: #cbe1cd;
-    left: -20px;
-   
-}
-.betitemheader{
-    font-size:medium;
-    font-weight: bold;
-}
-.betitemcontent{
-    font-size: x-small;
-}
-.icon{
-    width: 70px;
-    height: 70px;
+.betcontainer {
+  height: 80px;
+  background-color: #cbe1cd;
 
-   
-    border-radius:50%;
+ margin-left: -40px;
+}
+.betitemheader {
+  font-size: medium;
+  font-weight: bold;
+}
+.betitemcontent {
+  font-size: x-small;
+  font-weight: bold;
+}
+.icon {
+  width: 70px;
+  height: 70px;
 
-position: relative;
+  border-radius: 50%;
 
+  position: relative;
 }
-.icon:hover{
-    background-color: #A3C1A6;
-   transition: all 1s;
+.icon:hover {
+  background-color: #a3c1a6;
+  transition: all 1s;
 }
-.icon i{
-    font-weight: bold;
-top: 12px;
-left: 17px;
-position: absolute;    
+.icon i {
+  font-weight: bold;
+  top: 12px;
+  left: 17px;
+  position: absolute;
 }
+@media screen and  (max-width: 780px) {
+
+    .betcontainer {
+        height: auto;
+        background-color: #cbe1cd;
+      
+     
+      }
+ 
+ 
+        }

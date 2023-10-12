@@ -3,7 +3,7 @@ import "../css/Cart.css";
 function Cart(props) {
     return (
         <>
-         <div className="about ">
+         <div className="about">
           <img
             loading="lazy"
             width="1000"
@@ -15,13 +15,13 @@ function Cart(props) {
             srcset="https://medical.sanandajweb.ir/wp-content/uploads/2022/08/333-1.jpg 1000w, https://medical.sanandajweb.ir/wp-content/uploads/2022/08/333-1-600x275.jpg 600w, https://medical.sanandajweb.ir/wp-content/uploads/2022/08/333-1-300x137.jpg 300w, https://medical.sanandajweb.ir/wp-content/uploads/2022/08/333-1-768x352.jpg 768w"
             sizes="(max-width: 1000px) 100vw, 1000px"
           />
-          <div className="about-box">
+           <div className="about-box">
             <h2 className="about-box-title">لورم ایپسوم متن ساختگی</h2>
             <p className="about-box-text">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است.
             </p>
-          </div>
+          </div> 
         </div>
         </>
     );

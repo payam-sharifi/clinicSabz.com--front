@@ -46,7 +46,12 @@
     -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+  disable: function() {
+    var maxWidth = 780;
+    return window.innerWidth < maxWidth;
+  }
+});
   </script>
   </body>
 </html>

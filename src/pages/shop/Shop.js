@@ -11,6 +11,7 @@ import { searchOnProductName } from "../../features/products/productsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../features/products/actions";
 import ReactPaginate from "react-paginate";
+import "../../css/onlineshop.css";
 const Shop = () => {
   const { products, loading, error } = useSelector(
     (state) => state.AllProducts
@@ -96,7 +97,7 @@ const Shop = () => {
             {currentPosts &&
               currentPosts.map((p) => (
                 <div className="col-md-4 mt-3" key={p._id}>
-                  <Card style={{ maxWidth: 18 + "rem"}}>
+                  {/*   <Card style={{ maxWidth: 18 + "rem"}}>
                     <Card.Img
                       variant="top"
                       src={p.imgurl}
@@ -135,7 +136,48 @@ const Shop = () => {
                         افزودن به سبد خرید
                       </Button>
                     </Card.Body>
-                  </Card>
+                  </Card> */}
+                  {/*   <div className='onlineshopmain d-flex  align-items-center justify-content-center'>  */}
+                  <div className="onlinecart1 d-flex flex-column justify-content-around px-2 text-center ">
+                    <div className="img-top">
+                      <img
+                        src="images/1.jpeg"
+                        className="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="title">{p.productname}</div>
+                    <div className="price">
+                      {p.sellprice} <span>تومان</span>
+                    </div>
+                    <ListGroup className="list-group-flush">
+                      <ListGroup.Item className="d-flex justify-content-between">
+                        <p>قیمت فروش</p>
+                        {p.sellprice}
+                      </ListGroup.Item>
+                      <ListGroup.Item className="d-flex justify-content-between">
+                        <p>موجودی</p>
+                        {p.numberInStock}
+                      </ListGroup.Item>
+                      <ListGroup.Item className="d-flex justify-content-between">
+                        <p>شرکت سازنده</p>
+                        {p.company}
+                      </ListGroup.Item>
+                      <ListGroup.Item className="d-flex justify-content-between">
+                      <details>
+                        <summary>نمایش توضیحات</summary>
+                        <Card.Text>{p.productinfo}</Card.Text>
+                      </details>
+                      </ListGroup.Item>
+                    </ListGroup>
+                    <button
+                      onClick={() => handleAddToCart(p)}
+                      className="btn btn-success"
+                    >
+                      {" "}
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
                 </div>
               ))}
           </div>
