@@ -17,6 +17,7 @@ const Menu = () => {
     }
   });
   const disbalescroll = () => {
+    console.log(overflow)
     if (overflow === false) {
       setoverflow(true);
       document.body.style.overflow = "hidden";
@@ -163,11 +164,11 @@ const Menu = () => {
 
       <MobileView>
         {overflow && (
-          <div>
-            <div className="sidecover" onClick={disbalescroll}></div>
-            <div className="sidebarclinic">
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                <li className="nav-item">
+          <div onClick={disbalescroll}>
+            <div className="sidecover " ></div>
+            <div className="sidebarclinic mt-5" >
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 " >
+                <li className="nav-item" >
                   <NavLink
                     to="/"
                     className={(nav) =>
@@ -180,7 +181,7 @@ const Menu = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item ">
+                <li className="nav-item " >
                   <NavLink
                     to="/shopping"
                     className={(nav) =>

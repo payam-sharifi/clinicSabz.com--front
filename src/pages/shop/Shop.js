@@ -57,10 +57,11 @@ const Shop = () => {
   };
   return (
     <>
+     
       <Menu />
 
-      <div className="container">
-        <div class="row">
+      <div className="container ">
+        <div class="row justify-content-center ">
           <div className="row mt-5">
             <div className="col-md-4 mt-5">
               <div className="search">
@@ -97,47 +98,6 @@ const Shop = () => {
             {currentPosts &&
               currentPosts.map((p) => (
                 <div className="col-md-4 mt-3" key={p._id}>
-                  {/*   <Card style={{ maxWidth: 18 + "rem"}}>
-                    <Card.Img
-                      variant="top"
-                      src={p.imgurl}
-                      className="img-fluid"
-                      height={60}
-                    />
-                    <Card.Body>
-                      <Card.Title>{p.productname}</Card.Title>
-                     
-                      
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                      <ListGroup.Item className="d-flex justify-content-between">
-                        <p>قیمت فروش</p>
-                        {p.sellprice}
-                      </ListGroup.Item>
-                      <ListGroup.Item className="d-flex justify-content-between">
-                        <p>موجودی</p>
-                        {p.numberInStock}
-                      </ListGroup.Item>
-                      <ListGroup.Item className="d-flex justify-content-between">
-                        <p>شرکت سازنده</p>
-                        {p.company}
-                      </ListGroup.Item>
-                      <ListGroup.Item className="d-flex justify-content-between">
-                      <details>
-                        <summary>نمایش توضیحات</summary>
-                        <Card.Text>{p.productinfo}</Card.Text>
-                      </details>
-                      </ListGroup.Item>
-                    </ListGroup>
-                    <Card.Body className="d-flex justify-content-between align-items-center">
-                     
-                     
-                      <Button onClick={() => handleAddToCart(p)}>
-                        افزودن به سبد خرید
-                      </Button>
-                    </Card.Body>
-                  </Card> */}
-                  {/*   <div className='onlineshopmain d-flex  align-items-center justify-content-center'>  */}
                   <div className="onlinecart1 d-flex flex-column justify-content-around px-2 text-center ">
                     <div className="img-top">
                       <img
@@ -151,23 +111,23 @@ const Shop = () => {
                       {p.sellprice} <span>تومان</span>
                     </div>
                     <ListGroup className="list-group-flush">
-                      <ListGroup.Item className="d-flex justify-content-between">
-                        <p>قیمت فروش</p>
+                      <ListGroup.Item className=" d-flex justify-content-between">
+                        <p className="mb-0">قیمت فروش</p>
                         {p.sellprice}
                       </ListGroup.Item>
                       <ListGroup.Item className="d-flex justify-content-between">
-                        <p>موجودی</p>
+                        <p className="mb-0">موجودی</p>
                         {p.numberInStock}
                       </ListGroup.Item>
                       <ListGroup.Item className="d-flex justify-content-between">
-                        <p>شرکت سازنده</p>
+                        <p className="mb-0">شرکت سازنده</p>
                         {p.company}
                       </ListGroup.Item>
-                      <ListGroup.Item className="d-flex justify-content-between">
-                      <details>
-                        <summary>نمایش توضیحات</summary>
-                        <Card.Text>{p.productinfo}</Card.Text>
-                      </details>
+                      <ListGroup.Item className="d-flex justify-content-between text-start">
+                        <details>
+                          <summary>نمایش توضیحات</summary>
+                          <Card.Text >{p.productinfo}</Card.Text>
+                        </details>
                       </ListGroup.Item>
                     </ListGroup>
                     <button
@@ -180,28 +140,29 @@ const Shop = () => {
                   </div>
                 </div>
               ))}
-          </div>
-          <div className="m-r mt-5">
-            <ReactPaginate
-              onPageChange={paginate}
-              pageCount={Math.ceil(products.length / postsPerPage)}
-              previousLabel={"<<"}
-              nextLabel={">>"}
-              activeClassName={"item active "}
-              breakClassName={"item break-me "}
-              breakLabel={"..."}
-              containerClassName={"pagination"}
-              disabledClassName={"disabled-page"}
-              marginPagesDisplayed={2}
-              nextClassName={"item previous "}
-              pageClassName={"item pagination-page "}
-              pageRangeDisplayed={2}
-              previousClassName={"item next"}
-            />
+            <div className="m-r  mt-md-5 my-2">
+              <ReactPaginate
+                onPageChange={paginate}
+                pageCount={Math.ceil(products.length / postsPerPage)}
+                previousLabel={"<<"}
+                nextLabel={">>"}
+                activeClassName={"item active "}
+                breakClassName={"item break-me "}
+                breakLabel={"..."}
+                containerClassName={"pagination"}
+                disabledClassName={"disabled-page"}
+                marginPagesDisplayed={2}
+                nextClassName={"item previous "}
+                pageClassName={"item pagination-page "}
+                pageRangeDisplayed={2}
+                previousClassName={"item next"}
+              />
+            </div>
           </div>
         </div>
       </div>
       <Footer />
+      
     </>
   );
 };

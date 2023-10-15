@@ -5,7 +5,7 @@ import { memo } from "react";
 const Footer =()=>{
     return(
        
-         <div id="footer" className=" bg-menu  mt-md-5">  
+         <div id="footer" className=" bg-menu  ">  
   
         <div className="row justify-content-center   container  p-4">
           <div className="col-md-4 ">

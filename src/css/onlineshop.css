@@ -2,19 +2,25 @@
     width: 270px;
     height: 600px;
     background-color: white;
-   margin-right: 30%;
+   margin-right: 10%;
    margin-top: 10%;
+ 
     border-radius: 15px;
 }
 .onlinecart{
     width: 270px;
     height: 380px;
     background-color: white;
-   margin-right: 30%;
-   margin-top: 10%;
+   margin-right: 120%;
+   margin-top: 40%;
     border-radius: 15px;
 }
-
+.onlinecart1 img{
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+    
+}
 .onlinecart img{
     border-radius: 15px;
     height: 200px;
@@ -24,21 +30,40 @@
 .pagin{
     margin-right: 300px;
 }
-.onlinecart .title{
+.title{
     margin-top:10px;
     font-weight: bold;
     
 }
-.onlinecart .price{
+.price{
   color: green;  
   margin-bottom: 10px;
 }
 
-@media screen and  (max-width: 780px) {
+@media screen and  (max-width: 780px)  {
   
  .shop{
     margin-right: 0px !important;
     margin-left: 100px !important;
     margin-bottom: 40px !important;
  }
+ .onlinecart{
+    width: 250px;
+    height: 380px;
+    background-color: white;
+   margin-right: 20%;
+   margin-top: 10%;
+    border-radius: 15px;
 }
+
+}
+@media screen and  (max-width: 414px) {
+    .onlinecart{
+        width: 250px;
+        height: 380px;
+        background-color: white;
+       margin-right: 20%;
+       margin-top: 10%;
+        border-radius: 15px;
+    }
+   }

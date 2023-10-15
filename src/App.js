@@ -13,7 +13,7 @@ import Reservation from "./pages/Reservation";
 function App() {
   return (
     <>
-  
+   <div className="overflow-hidden d-flex flex-column justify-content-center ">
     <BrowserRouter>
     
     <Routes>
@@ -28,7 +28,7 @@ function App() {
     
    
     </BrowserRouter>
-   
+    </div>
     </> 
     
     

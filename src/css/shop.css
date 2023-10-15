@@ -1,12 +1,13 @@
-.shopcard{
-    margin: 5rem auto;
-}
 
-@media only screen and (min-width: 600px) {
 .m-r{
-    margin-right: 5rem;
+    margin-right: 3rem;
+}
+@media only screen and (min-width: 780px) {
+.m-r{
+    margin-right: 8rem;
 }
 .btn-size{
     max-width: 7rem;
 }
 }
+
