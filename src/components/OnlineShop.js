@@ -85,7 +85,7 @@ const Shop = () => {
               </div>
               <button
                 onClick={() => handleAddToCart(p)}
-                className="btn btn-success"
+                className="btn btn-success "
               >
                 {" "}
                 افزودن به سبد خرید

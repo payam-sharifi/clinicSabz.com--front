@@ -31,7 +31,6 @@ function ProductSlider(props) {
   );
 
   const cart = useSelector((state) => state.cart);
-  console.log("cart", cart);
   //  const [blogPosts, setBlogPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(3);
@@ -59,6 +58,7 @@ function ProductSlider(props) {
 
   useEffect(() => {
     dispatch(getProducts());
+   
   }, [dispatch]);
 
   const searchHandle = (ProductName) => {
@@ -111,13 +111,15 @@ function ProductSlider(props) {
       )}
       {currentPosts &&
         currentPosts.map((p) => (
+<div>
           <SwiperSlide>
+           
             <div
               className="onlinecart  d-flex flex-column justify-content-around px-2 text-center "
               key={p._id}
             >
               <div className="img-top">
-                <img src="images/1.jpeg" className="d-block w-100" alt="..." />
+                <img src={p.imgurl} className="d-block w-100" alt="..." />
               </div>
               <div className="title">{p.productname}</div>
               <div className="price">
@@ -131,7 +133,9 @@ function ProductSlider(props) {
                 افزودن به سبد خرید
               </Button>
             </div>
+          
           </SwiperSlide>
+          </div>
         ))}
     </Swiper>
   

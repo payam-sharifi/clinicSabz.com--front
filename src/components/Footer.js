@@ -7,7 +7,7 @@ const Footer =()=>{
        
          <div id="footer" className=" bg-menu  ">  
   
-        <div className="row justify-content-center   container  p-4">
+        <div className="row p-4">
           <div className="col-md-4 ">
                  <h5>اطلاعات تماس :</h5>
                  <hr />

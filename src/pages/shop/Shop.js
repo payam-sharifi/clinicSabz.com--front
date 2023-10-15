@@ -132,7 +132,7 @@ const Shop = () => {
                     </ListGroup>
                     <button
                       onClick={() => handleAddToCart(p)}
-                      className="btn btn-success"
+                      className="btn btn-success my-3"
                     >
                       {" "}
                       افزودن به سبد خرید

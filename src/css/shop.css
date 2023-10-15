@@ -3,9 +3,7 @@
     margin-right: 3rem;
 }
 @media only screen and (min-width: 780px) {
-.m-r{
-    margin-right: 8rem;
-}
+
 .btn-size{
     max-width: 7rem;
 }

@@ -112,7 +112,7 @@ z-index: -1;
 }
 
 .clinics{
-  
+  width: 100%;
   margin-left:-40px;
   
   height: 900px;
@@ -181,9 +181,8 @@ z-index: -1;
 margin-right: 650px;
 }
 .slider{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
 height: 700px;
   width: 100%;
 }

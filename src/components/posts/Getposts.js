@@ -36,8 +36,8 @@ const Getposts = () => {
       {blogPosts === null ? (
         <h1>null</h1>
       ) : (
-        <div className="container">
-          <div className="row ms-md-5 justify-content-center justify-content-md-center align-items-center">
+      
+          <div className="row justify-content-center justify-content-md-center align-items-center">
             {currentPosts.map((p) => (
               <div className="col-md-4 ">
                 <div className="box-article">
@@ -100,7 +100,8 @@ const Getposts = () => {
               previousClassName={"item next"}
             />
           </div>
-        </div>
+         
+      
       )}
     </>
   );

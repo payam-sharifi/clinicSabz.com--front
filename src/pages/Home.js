@@ -44,16 +44,16 @@ const Home = () => {
       </div>
      
       <div className="clinics ">
-        <div className="parallax">
+        <div className="parallax ">
           <hr className="dropdown-divider " />
 
           <div className="text-center me-5 me-md-0  departments overflow-hidden">
             <h1>دپارتمان ها</h1>
           </div>
 
-          <div className="container">
-            <div className="row align-items-center me-4 me-md-0">
-              <div className="col-md-3">
+         
+            <div className="row align-items-center justify-content-center ms-3 mt-5 me-md-0">
+              <div className="col-md-3 ">
                 <div
                   data-aos="fade-in"
                   data-aos-duration="3500"
@@ -86,7 +86,7 @@ const Home = () => {
                   </NavLink>
                 </div>
               </div>
-              <div className="col-md-3 ">
+              <div className="col-md-3  ">
                 <div
                   data-aos="fade-in"
                   data-aos-duration="1000"
@@ -186,7 +186,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+      
 
           <div
             class="elementor-shape elementor-shape-bottom"
@@ -205,6 +205,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
+      
       <div className="services  container mb-5">
         <div className="text-center   departments overflow-hidden">
           <h1 style={{ color: "black" }}>خدمات ما</h1>
