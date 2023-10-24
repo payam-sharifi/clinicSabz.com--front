@@ -7,7 +7,7 @@ import Shop from "./pages/shop/Shop";
 import Basket from "./pages/shop/Basket";
 import AdminRoutes from "./admin/AdminRoutes";
 import Reservation from "./pages/Reservation";
-
+import ShowPost from "./components/posts/Showpost"
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/admin/*" element={<AdminRoutes/>}/>
       <Route path="/getposts" element={<Getposts/>}/>
+      <Route path="/posts/:postId" element={<ShowPost/>}/>
       <Route path="/shopping" element={<Shop/>}/>
       <Route path="/basket" element={<Basket/>}/>
       <Route path="/reservation" element={<Reservation/>}/>

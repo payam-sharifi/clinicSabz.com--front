@@ -10,19 +10,18 @@ const Showpost = () => {
   const { products, loading, error } = useSelector((state) => state.allposts);
   const postId = useParams();
   const [post, setPost] = useState(null);
-  const [mainImg,setmMinImg]=useState()
+  const [mainImg, setmMinImg] = useState();
   /*   const [loading,setLoading]=useState(null)
     const [error,setError]=useState(null) */
   useEffect(() => {
+ 
     axios(`${BASE_URL}/posts/${postId.postId}`)
-      .then((res) =>{ 
-        setPost(res.data)
-      setmMinImg(res.data.imgurl[0])
+      .then((res) => {
+        setPost(res.data);
+        setmMinImg(res.data.imgurl[0]);
       })
       .catch((err) => console.log(err.message));
   }, [postId]);
-
-
 
   return (
     <>
@@ -47,50 +46,34 @@ const Showpost = () => {
               </div>
             </div>
 
-
-
-
-
-            
             <div className="col-md-4 mt-5 ">
-          
               <div className="col-md-6 col-sm-2">
-              <img src={mainImg} className="showimg" alt="..." />
-
+                <img src={mainImg} className="showimg" alt="..." />
               </div>
-
-
-
 
               <div className="row d-n">
-              {
-               
-             post.imgurl.map(p=>
-              <div className="col-md-3  mt-2 p-c">
-                <img src={p} onClick={(e)=>setmMinImg(e.target.src)} className="photo-bandangoshti" alt="..." />
+                {post.imgurl.map((p) => (
+                  <div className="col-md-3  mt-2 p-c">
+                    <img
+                      src={p}
+                      onClick={(e) => setmMinImg(e.target.src)}
+                      className="photo-bandangoshti"
+                      alt="..."
+                    />
+                  </div>
+                ))}
               </div>
-              )
-            
-             }
-                
-               
+              <div className="row d-md-none">
+                {post.imgurl.map((p) => (
+                  <img
+                    src={p}
+                    onClick={(e) => setmMinImg(e.target.src)}
+                    className="mt-2 photo-bandangoshti"
+                    alt="..."
+                  />
+                ))}
+              </div>
             </div>
-            <div className="row d-md-none">
-              {
-               
-             post.imgurl.map(p=>
-              
-                <img src={p} onClick={(e)=>setmMinImg(e.target.src)} className="mt-2 photo-bandangoshti" alt="..." />
-             
-              )
-            
-             }
-                
-               
-            </div>
-            </div>
-
-          
           </div>
         )}
       </div>

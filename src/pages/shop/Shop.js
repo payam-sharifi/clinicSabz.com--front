@@ -99,9 +99,9 @@ const Shop = () => {
               currentPosts.map((p) => (
                 <div className="col-md-4 mt-3" key={p._id}>
                   <div className="onlinecart1 d-flex flex-column justify-content-around px-2 text-center ">
-                    <div className="img-top">
+                    <div className="img-top ">
                       <img
-                        src="images/1.jpeg"
+                        src={p.imgurl}
                         className="d-block w-100"
                         alt="..."
                       />
